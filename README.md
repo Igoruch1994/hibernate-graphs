@@ -1,4 +1,4 @@
-# hibernate-graphs example
+# hibernate-graphs
 Example of using hibernate graphs.
 
 ### Setup local Postgres DB in Docker container
