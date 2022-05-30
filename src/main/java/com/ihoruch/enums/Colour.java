@@ -1,2 +1,8 @@
-package com.ihoruch.enums;public class Colour {
+package com.ihoruch.enums;
+
+public enum Colour {
+
+    WHITE,
+    BLACK
+
 }

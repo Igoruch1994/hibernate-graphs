@@ -1,2 +1,8 @@
-package com.ihoruch.config;public interface TriFunction {
+package com.ihoruch.config;
+
+@FunctionalInterface
+public interface TriFunction<A,B,C,R> {
+
+    R apply(A a, B b, C c);
+
 }

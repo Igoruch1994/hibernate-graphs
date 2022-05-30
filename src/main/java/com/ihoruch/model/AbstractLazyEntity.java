@@ -1,6 +1,5 @@
-package com.cnhindustrial.dtc.model;
+package com.ihoruch.model;
 
-import com.cnhindustrial.dtc.model.data.AbstractAuditEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,12 +13,13 @@ import javax.persistence.Transient;
 /**
  * Hibernate interceptor is used here to lazy-load entities without direct primary key relations between them.
  */
+
 @Getter
 @Setter
-@MappedSuperclass
 @SuperBuilder
+@MappedSuperclass
 @NoArgsConstructor
-public abstract class AbstractLazyAuditEntity extends AbstractAuditEntity implements PersistentAttributeInterceptable {
+public abstract class AbstractLazyEntity implements PersistentAttributeInterceptable {
 
     @Transient
     private PersistentAttributeInterceptor persistentAttributeInterceptor;

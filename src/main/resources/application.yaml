@@ -1,0 +1,26 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hibernate-graph
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.jdbc.batch_size: 100000
+      hibernate.jdbc.fetch_size: 100000
+      hibernate.generate_statistics: false
+      hibernate.cache.use_query_cache: false
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_structured_entries: false
+      hibernate.cache.use_minimal_puts: false
+#      hibernate.hbm2dll.create_namespaces: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?createDatabaseIfNotExist=true
+    username: postgres
+    password: postgres
+    hikari:
+      connection-timeout: 80000
+      poolName: ${CONN_POOL_MAXIMUM_POOL_HIKARI_NAME:FC-ServicePool}
