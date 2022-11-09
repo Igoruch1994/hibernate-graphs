@@ -36,7 +36,6 @@ public class UserServiceImpl implements UserService {
         user.setUserCars(Set.of(userCar));
         userRepository.save(user);
         //comment
-        //comment 2
     }
 
 }
