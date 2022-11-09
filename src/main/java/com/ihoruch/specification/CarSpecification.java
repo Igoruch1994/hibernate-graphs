@@ -18,6 +18,7 @@ public class CarSpecification implements Specification<Car> {
 
     private CarSpecification(final Map<String, Object> attributes) {
         this.attributes = attributes;
+        //comment 3
     }
 
     public static CarSpecification create(final Map<String, Object> attributes) {
